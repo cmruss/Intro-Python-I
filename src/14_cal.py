@@ -31,14 +31,14 @@ import sys
 import calendar
 import datetime
 
-today = datetime.date.today()
+a = sys.argv
 
-if len(sys.argv) == 3:
-  if int(sys.argv[2]) > 0 & int(sys.argv[2]) < 13 & len(sys.argv[1]) == 4:
-    m = int(sys.argv[2])
-    y = int(sys.argv[1])
+if len(a) == 3:
+  if 0 < int(a[2]) < 13 & len(a[1]) == 4:
+    m = int(a[2])
+    y = int(a[1])
 else:
-  m = today.month
-  y = today.year
+  m = datetime.date.today().month
+  y = datetime.date.today().year
   
 print(calendar.TextCalendar().formatmonth(y,m))

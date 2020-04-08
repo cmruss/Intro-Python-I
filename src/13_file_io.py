@@ -26,7 +26,6 @@ f.closed
 with open("./bar.txt", mode='w') as f:
     f.write('I was walking down the street just the other day\nWhen a man came up and he said to me\nHey Jack.! Wass yer name\nI said mirinam Jesse James hey\nAh well a-bang, bang, bang ba-bang\n')
 f.close()
-
 with open("./bar.txt") as f:
     read_data = f.read()
     print(read_data)

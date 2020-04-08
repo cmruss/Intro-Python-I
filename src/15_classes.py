@@ -26,7 +26,7 @@ class Waypoint(LatLon):
 
 # YOUR CODE HERE
 
-class Geocache(Waypoint ):
+class Geocache(Waypoint):
     def __init__(self, name, lat, lon, difficulty, size):
         super().__init__(name, lat, lon)
         self.difficulty = difficulty
